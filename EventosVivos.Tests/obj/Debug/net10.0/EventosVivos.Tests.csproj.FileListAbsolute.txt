@@ -108,3 +108,12 @@ C:\Users\LEIDY\source\repos\eventsvivos\EventosVivos.Tests\obj\Debug\net10.0\ref
 C:\Users\LEIDY\source\repos\eventsvivos\EventosVivos.Tests\obj\Debug\net10.0\EventosVivos.Tests.pdb
 C:\Users\LEIDY\source\repos\eventsvivos\EventosVivos.Tests\obj\Debug\net10.0\EventosVivos.Tests.genruntimeconfig.cache
 C:\Users\LEIDY\source\repos\eventsvivos\EventosVivos.Tests\obj\Debug\net10.0\ref\EventosVivos.Tests.dll
+C:\Users\LEIDY\source\repos\eventsvivos\EventosVivos.Tests\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\LEIDY\source\repos\eventsvivos\EventosVivos.Tests\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\LEIDY\source\repos\eventsvivos\EventosVivos.Tests\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\LEIDY\source\repos\eventsvivos\EventosVivos.Tests\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\LEIDY\source\repos\eventsvivos\EventosVivos.Tests\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\LEIDY\source\repos\eventsvivos\EventosVivos.Tests\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\LEIDY\source\repos\eventsvivos\EventosVivos.Tests\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\LEIDY\source\repos\eventsvivos\EventosVivos.Tests\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\LEIDY\source\repos\eventsvivos\EventosVivos.Tests\obj\Debug\net10.0\EventosVivos.Tests.sourcelink.json
