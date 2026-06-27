@@ -97,3 +97,18 @@ dotnet test
 - Si faltan menos de 24 horas, máximo 5 entradas por transacción
 - Un evento se marca como completado automáticamente cuando supera su hora de fin
 - Si se cancela una reserva confirmada con menos de 48 horas del evento, las entradas se marcan como perdidas
+
+## Seguridad
+
+La API está protegida con autenticación **JWT (JSON Web Tokens)**.
+
+### Credenciales de prueba
+- **Admin:** usuario `admin` / contraseña `Ev3nt0s@2026`
+- **Usuario:** usuario `user` / contraseña `Us3r@Vivos!`
+
+### Flujo de autenticación
+1. Hacer login en `POST /api/auth/login` con las credenciales
+2. Copiar el token JWT de la respuesta
+3. Incluir el token en cada petición: `Authorization: Bearer {token}`
+
+El frontend maneja el token automáticamente mediante un interceptor HTTP.
