@@ -1,0 +1,20 @@
+<div class="login-container">
+  <div class="login-card">
+    <h2>Eventos Vivos</h2>
+    <p class="subtitle">Inicia sesión para continuar</p>
+
+    @if (error) {
+      <p class="error">{{ error }}</p>
+    }
+
+    <div class="formulario">
+      <label>Usuario</label>
+      <input [(ngModel)]="credentials.username" placeholder="Usuario" />
+
+      <label>Contraseña</label>
+      <input type="password" [(ngModel)]="credentials.password" placeholder="Contraseña" />
+
+      <button (click)="login()">Iniciar Sesión</button>
+    </div>
+  </div>
+</div>

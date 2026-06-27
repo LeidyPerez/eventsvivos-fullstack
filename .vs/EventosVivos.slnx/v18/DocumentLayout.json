@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\LEIDY\\source\\repos\\eventsvivos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{85FF72F3-588E-D7B3-30AA-8CD1791FCC58}|EventosVivos.API\\EventosVivos.API.csproj|c:\\users\\leidy\\source\\repos\\eventsvivos\\eventosvivos.api\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85FF72F3-588E-D7B3-30AA-8CD1791FCC58}|EventosVivos.API\\EventosVivos.API.csproj|solutionrelative:eventosvivos.api\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{85FF72F3-588E-D7B3-30AA-8CD1791FCC58}|EventosVivos.API\\EventosVivos.API.csproj|c:\\users\\leidy\\source\\repos\\eventsvivos\\eventosvivos.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85FF72F3-588E-D7B3-30AA-8CD1791FCC58}|EventosVivos.API\\EventosVivos.API.csproj|solutionrelative:eventosvivos.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{85FF72F3-588E-D7B3-30AA-8CD1791FCC58}|EventosVivos.API\\EventosVivos.API.csproj|c:\\users\\leidy\\source\\repos\\eventsvivos\\eventosvivos.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85FF72F3-588E-D7B3-30AA-8CD1791FCC58}|EventosVivos.API\\EventosVivos.API.csproj|solutionrelative:eventosvivos.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85FF72F3-588E-D7B3-30AA-8CD1791FCC58}|EventosVivos.API\\EventosVivos.API.csproj|c:\\users\\leidy\\source\\repos\\eventsvivos\\eventosvivos.api\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85FF72F3-588E-D7B3-30AA-8CD1791FCC58}|EventosVivos.API\\EventosVivos.API.csproj|solutionrelative:eventosvivos.api\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{85FF72F3-588E-D7B3-30AA-8CD1791FCC58}|EventosVivos.API\\EventosVivos.API.csproj|c:\\users\\leidy\\source\\repos\\eventsvivos\\eventosvivos.api\\interfaces\\ieventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\LEIDY\\source\\repos\\eventsvivos\\EventosVivos.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "EventosVivos.API\\Controllers\\AuthController.cs",
@@ -66,25 +66,24 @@
               "RelativeToolTip": "EventosVivos.API\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-27T15:09:28.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-27T15:09:28.479Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\LEIDY\\source\\repos\\eventsvivos\\EventosVivos.API\\Auth\\AuthService.cs",
               "RelativeDocumentMoniker": "EventosVivos.API\\Auth\\AuthService.cs",
               "ToolTip": "C:\\Users\\LEIDY\\source\\repos\\eventsvivos\\EventosVivos.API\\Auth\\AuthService.cs",
               "RelativeToolTip": "EventosVivos.API\\Auth\\AuthService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-27T14:54:14.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\LEIDY\\source\\repos\\eventsvivos\\EventosVivos.API\\Program.cs",
               "RelativeDocumentMoniker": "EventosVivos.API\\Program.cs",
@@ -97,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EventosController.cs",
               "DocumentMoniker": "C:\\Users\\LEIDY\\source\\repos\\eventsvivos\\EventosVivos.API\\Controllers\\EventosController.cs",
               "RelativeDocumentMoniker": "EventosVivos.API\\Controllers\\EventosController.cs",
@@ -105,8 +104,7 @@
               "RelativeToolTip": "EventosVivos.API\\Controllers\\EventosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T19:55:16.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T19:55:16.432Z"
             },
             {
               "$type": "Document",
