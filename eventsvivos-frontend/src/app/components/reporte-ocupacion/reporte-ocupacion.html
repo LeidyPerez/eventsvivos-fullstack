@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>Reporte de Ocupación</h2>
+
+  @if (error) {
+    <p class="error">{{ error }}</p>
+  }
+
+  @if (reporte) {
+    <div class="reporte-card">
+      <h3>{{ reporte.titulo }}</h3>
+      <p><strong>Estado:</strong> {{ reporte.estado }}</p>
+      <p><strong>Entradas vendidas:</strong> {{ reporte.entradasVendidas }}</p>
+      <p><strong>Entradas disponibles:</strong> {{ reporte.entradasDisponibles }}</p>
+      <p><strong>Porcentaje de ocupación:</strong> {{ reporte.porcentajeOcupacion }}%</p>
+      <p><strong>Total de ingresos:</strong> ${{ reporte.totalIngresos }}</p>
+    </div>
+  }
+
+  <a routerLink="/eventos">Volver a Eventos</a>
+</div>

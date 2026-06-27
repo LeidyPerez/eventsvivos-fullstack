@@ -1,0 +1,46 @@
+<div class="container">
+  <h2>Eventos</h2>
+
+  <!-- Filtros -->
+  <div class="filtros">
+    <input [(ngModel)]="filtros.titulo" placeholder="Buscar por título..." (ngModelChange)="filtrar()" />
+    <select [(ngModel)]="filtros.tipo" (ngModelChange)="filtrar()">
+     <option value="">Todos los tipos</option>
+     <option value="conferencia">Conferencia</option>
+     <option value="taller">Taller</option>
+     <option value="concierto">Concierto</option>
+    </select>
+    <select [(ngModel)]="filtros.estado" (ngModelChange)="filtrar()">
+     <option value="">Todos los estados</option>
+     <option value="activo">Activo</option>
+     <option value="completado">Completado</option>
+     <option value="cancelado">Cancelado</option>
+    </select>
+     <button (click)="filtrar()">Filtrar</button>
+     <button (click)="limpiarFiltros()">Limpiar</button>
+</div>
+
+  @if (mensaje) {
+    <p>{{ mensaje }}</p>
+  }
+
+  @if (eventos.length === 0) {
+    <p>No hay eventos disponibles.</p>
+  }
+
+  @for (evento of eventos; track evento.id) {
+    <div class="evento-card">
+      <h3>{{ evento.titulo }}</h3>
+      <p>{{ evento.descripcion }}</p>
+      <p><strong>Tipo:</strong> {{ evento.tipoEvento }}</p>
+      <p><strong>Inicio:</strong> {{ evento.fechaHoraInicio | date:'dd/MM/yyyy HH:mm' }}</p>
+      <p><strong>Fin:</strong> {{ evento.fechaHoraFin | date:'dd/MM/yyyy HH:mm' }}</p>
+      <p><strong>Precio:</strong> ${{ evento.precioEntrada }}</p>
+      <p><strong>Estado:</strong> {{ evento.estado }}</p>
+      <div class="acciones">
+        <a [routerLink]="['/eventos', evento.id, 'reservar']">Reservar</a>
+        <a [routerLink]="['/eventos', evento.id, 'reporte']">Ver Reporte</a>
+      </div>
+    </div>
+  }
+</div>

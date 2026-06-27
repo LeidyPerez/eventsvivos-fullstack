@@ -1,0 +1,48 @@
+<div class="container">
+  <h2>Reservar Entrada</h2>
+
+  @if (mensaje) {
+    <p class="exito">{{ mensaje }}</p>
+  }
+
+  @if (error) {
+    <p class="error">{{ error }}</p>
+  }
+
+  @if (!reservaCreada) {
+    <div class="formulario">
+      <label>Cantidad de Entradas</label>
+      <input type="number" [(ngModel)]="reserva.cantidad" min="1" />
+
+      <label>Nombre del Comprador</label>
+      <input [(ngModel)]="reserva.nombreComprador" placeholder="Tu nombre completo" />
+
+      <label>Email del Comprador</label>
+      <input type="email" [(ngModel)]="reserva.emailComprador" placeholder="tu@email.com" />
+
+      <button (click)="crear()">Reservar</button>
+      <a routerLink="/eventos">Cancelar</a>
+    </div>
+  }
+
+  @if (reservaCreada) {
+    <div class="reserva-info">
+      <h3>Reserva creada</h3>
+      <p><strong>ID:</strong> {{ reservaCreada.id }}</p>
+      <p><strong>Estado:</strong> {{ reservaCreada.estado }}</p>
+      <p><strong>Cantidad:</strong> {{ reservaCreada.cantidad }}</p>
+      @if (reservaCreada.codigoReserva) {
+        <p><strong>Código:</strong> {{ reservaCreada.codigoReserva }}</p>
+      }
+      <div class="acciones">
+        @if (reservaCreada.estado === 'pendiente_pago') {
+          <button (click)="confirmarPago()">Confirmar Pago</button>
+        }
+        @if (reservaCreada.estado === 'confirmada') {
+          <button (click)="cancelar()">Cancelar Reserva</button>
+        }
+        <a routerLink="/eventos">Volver a Eventos</a>
+      </div>
+    </div>
+  }
+</div>

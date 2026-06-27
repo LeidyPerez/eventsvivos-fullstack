@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+nav {
+  background-color: #1a73e8;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+  .nav-brand {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 24px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background 0.2s;
+
+      &:hover {
+        background-color: rgba(255,255,255,0.2);
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 24px;
+
+  h2 {
+    font-size: 26px;
+    color: #1a73e8;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 8px;
+  }
+}
+
+.filtros {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+
+  input, select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    flex: 1;
+    min-width: 150px;
+  }
+
+  button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #1a73e8;
+    color: white;
+    transition: background 0.2s;
+
+    &:hover { background-color: #1558b0; }
+    &:last-child {
+      background-color: #6c757d;
+      background-color: #6c757d;
+    }
+  }
+}
+
+.evento-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 4px solid #1a73e8;
+
+  h3 {
+    font-size: 18px;
+    color: #1a73e8;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #555;
+  }
+
+  .acciones {
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+
+    a {
+      padding: 6px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      background-color: #1a73e8;
+      color: white;
+      transition: background 0.2s;
+
+      &:hover { background-color: #1558b0; }
+      &:last-child {
+        background-color: #34a853;
+        &:hover { background-color: #2d8f47; }
+      }
+    }
+  }
+}
+
+.formulario {
+  background: white;
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: -6px;
+  }
+
+  input, select, textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+      border-color: #1a73e8;
+    }
+  }
+
+  textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+
+  button {
+    padding: 10px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover { background-color: #1558b0; }
+  }
+
+  a {
+    text-align: center;
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover { text-decoration: underline; }
+  }
+}
+
+.reporte-card {
+  background: white;
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 4px solid #34a853;
+
+  h3 {
+    font-size: 20px;
+    color: #34a853;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #555;
+  }
+}
+
+.reserva-info {
+  background: white;
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 4px solid #fbbc04;
+
+  h3 {
+    font-size: 20px;
+    color: #f29900;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #555;
+  }
+
+  .acciones {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    button {
+      padding: 8px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      background-color: #1a73e8;
+      color: white;
+      transition: background 0.2s;
+
+      &:hover { background-color: #1558b0; }
+    }
+
+    a {
+      padding: 8px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      background-color: #6c757d;
+      color: white;
+      transition: background 0.2s;
+
+      &:hover { background-color: #545b62; }
+    }
+  }
+}
+
+.exito {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+a {
+  color: #1a73e8;
+}
