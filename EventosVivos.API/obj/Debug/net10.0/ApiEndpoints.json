@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "EventosVivos.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "EventosVivos.API.Controllers.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EventosVivos.API.Controllers.EventosController",
     "Method": "CrearEvento",
     "RelativePath": "api/Eventos",

@@ -1,11 +1,13 @@
 ﻿using EventosVivos.API.DTOs;
 using EventosVivos.API.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EventosVivos.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class EventosController : ControllerBase
     {
         private readonly IEventoService _service;
