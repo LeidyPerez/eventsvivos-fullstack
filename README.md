@@ -1,3 +1,7 @@
+## Cömo ejecutar el proyecto
+
+> **Nota** Ejecutar primero el backend y leugo el frontend.
+
 # EventosVivos - Sistema de Reservas
 
 Sistema fullstack para gestión de eventos y reservas desarrollado con .NET Core y Angular.
@@ -72,6 +76,7 @@ dotnet test
 
 | Método | Endpoint | Descripción |
 |--------|----------|-------------|
+| POST | /api/auth/login | Iniciar sesión y obtener token JWT |
 | POST | /api/eventos | Crear evento |
 | GET | /api/eventos | Listar eventos con filtros |
 | POST | /api/eventos/reservas | Crear reserva |
